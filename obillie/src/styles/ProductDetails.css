@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap");
+
+/* product-details.css */
+.product-details {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+}
+
+.product-header {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.product-title {
+  font-family: "Dancing Script", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.product-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.star {
+  width: 18px;
+  height: 18px;
+  color: #ddd;
+  transition: color 0.2s ease;
+}
+
+.star.filled {
+  color: #ffc107;
+  fill: #ffc107;
+}
+
+.rating-text {
+  color: #666;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.product-price {
+    font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.current-price {
+  font-size: 28px;
+  font-weight: 700;
+  color: #9a789b;
+}
+
+.original-price {
+  font-size: 20px;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.selector-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .product-details {
+    padding: 15px;
+  }
+
+  .product-title {
+    font-size: 28px;
+  }
+
+  .current-price {
+    font-size: 24px;
+  }
+
+  .original-price {
+    font-size: 18px;
+  }
+
+  .product-header {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-title {
+    font-size: 24px;
+  }
+
+  .current-price {
+    font-size: 22px;
+  }
+
+  .original-price {
+    font-size: 16px;
+  }
+
+  .star {
+    width: 16px;
+    height: 16px;
+  }
+
+  .rating-text {
+    font-size: 13px;
+  }
+}

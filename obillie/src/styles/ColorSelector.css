@@ -1,0 +1,67 @@
+/* color-selector.css */
+.color-selector {
+    margin-bottom: 25px;
+  }
+  
+  .color-options {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  
+  .color-swatch {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .color-swatch:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .color-swatch.active {
+    border-color: #333;
+    transform: scale(1.15);
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #333;
+  }
+  
+  .color-swatch[style*="ffffff"] {
+    border: 3px solid #e5e5e5;
+  }
+  
+  .color-swatch[style*="ffffff"].active {
+    border-color: #333;
+  }
+  
+  /* Special styling for white color swatch */
+  .color-swatch[title="White"] {
+    background-color: #ffffff !important;
+    border: 3px solid #e5e5e5;
+  }
+  
+  .color-swatch[title="White"]:hover {
+    border-color: #ccc;
+  }
+  
+  .color-swatch[title="White"].active {
+    border-color: #333;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #333;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .color-swatch {
+      width: 35px;
+      height: 35px;
+    }
+    
+    .color-options {
+      gap: 10px;
+    }
+  }

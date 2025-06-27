@@ -1,0 +1,100 @@
+/* accordion-section.css */
+.accordion-section {
+  border-bottom: 2px solid #e5e5e5;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.accordion-header {
+  width: 100%;
+  padding: 18px 20px;
+  background: #f8f9fa;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.accordion-header:hover {
+  background: #8a6c8b60;
+  color: #9a789b;
+}
+
+.accordion-header svg {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+  color: #462a46;
+}
+
+.accordion-header:hover svg {
+  color: #9a789b;
+}
+
+.accordion-content {
+  padding: 20px;
+  border-top: 1px solid #e5e5e5;
+  background: #fff;
+  animation: slideDown 0.3s ease;
+}
+
+.accordion-content p {
+  margin-bottom: 12px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.accordion-content p:last-child {
+  margin-bottom: 0;
+}
+
+.accordion-content ul {
+  margin: 15px 0;
+  padding-left: 20px;
+}
+
+.accordion-content li {
+  margin-bottom: 8px;
+  color: #666;
+  line-height: 1.5;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 500px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .accordion-header {
+    padding: 15px;
+    font-size: 15px;
+  }
+
+  .accordion-content {
+    padding: 15px;
+  }
+
+  .accordion-header svg {
+    width: 18px;
+    height: 18px;
+  }
+}
