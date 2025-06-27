@@ -12,8 +12,8 @@ const Header = () => {
             Obillie
           </div>
           <nav className="main-nav">
-            <a href="#" className="nav-item">MEN</a>
-            <a href="#" className="nav-item">WOMEN</a>
+            <a href="/men" className="nav-item">MEN</a>
+            <a href="/women" className="nav-item">WOMEN</a>
           </nav>
         </div>
         <div className="header-right">
