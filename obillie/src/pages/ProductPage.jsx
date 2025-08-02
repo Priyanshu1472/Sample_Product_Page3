@@ -4,9 +4,10 @@ import ProductGallery from '../components/ProductGallery';
 import ProductDetails from '../components/ProductDetails';
 import ProductInfo from '../components/ProductInfo';
 import '../styles/ProductPage.css';
-import img1 from '../assets/image1.png';
-import img2 from '../assets/image2.png';
-import img3 from '../assets/image3.png';
+import img1 from '../assets/images1.jpeg';
+import img2 from '../assets/images2.jpeg';
+import img3 from '../assets/images3.jpeg';
+import img4 from '../assets/images.jpeg';
 
 
 // Main Product Page Component
@@ -17,7 +18,7 @@ const ProductPage = () => {
   const [quantity, setQuantity] = useState(1);
 
   const product = {
-    title: 'Blazer',
+    title: 'Tailored Shirt',
     price: 999,
     originalPrice: 1299,
     rating: 4,
@@ -32,7 +33,7 @@ const ProductPage = () => {
     sizes: ['XS', 'S', 'M', 'L', 'XL', 'XXL']
   };
 
-  const images = [img1, img3, img2,  img3, img2, img1, img2, img3,];
+  const images = [img1, img3, img2,  img3, img4, img2, img1, img2, img3, img4];
 
   return (
     <div className="product-page">

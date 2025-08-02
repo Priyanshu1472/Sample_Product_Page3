@@ -9,7 +9,7 @@ const Header = () => {
       <div className="header-container">
         <div className="header-left">
           <div className="logo">
-            Obillie
+            Sample
           </div>
           <nav className="main-nav">
             <a href="/men" className="nav-item">MEN</a>
